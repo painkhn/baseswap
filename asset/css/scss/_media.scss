@@ -1,0 +1,50 @@
+@media screen and (max-width: 1000px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+    }
+
+    .main {
+        &__viking,
+        &__connect {
+            max-width: 373px;
+            
+            .bg {
+                filter: blur(1px);
+            }
+            
+            button {
+                display: none;
+            }
+            
+            &-left,
+            &-right {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        padding: 16px;
+        padding-top: 67px;
+
+        &__pretitle {
+            font-size: 27px;    
+        }
+
+        &__title {
+            font-size: 64px;
+            margin-top: 0;
+        }
+
+        &__logo {
+            &-img {
+                width: 100px;
+                height: 97px;
+            }
+        }
+    }
+}
